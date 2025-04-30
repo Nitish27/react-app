@@ -1,0 +1,7 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Keep some basic resets but remove most styles as they're now handled by Tailwind */
