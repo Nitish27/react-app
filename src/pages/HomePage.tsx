@@ -5,7 +5,7 @@ const HomePage = () => {
   const { isAuthenticated, user } = useAuth();
 
   return (
-    <div className="home-page bg-blue-50 p-4">
+    <div className="home-page p-4 text-white">
       <h1 className="text-2xl font-bold mb-4">React Auth Example</h1>
       <p className="mb-4">This is a demo of authentication using React Context API.</p>
       

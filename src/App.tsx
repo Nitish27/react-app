@@ -10,24 +10,26 @@ function App() {
   return (
     <AuthProvider>
       <Router>
-        <div className="container mx-auto px-4 py-8">
-          <div className="flex flex-col min-h-screen">
-            <Navbar />
-            <main className="container mx-auto px-4 py-8 flex-1">
-              <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/login" element={<LoginPage />} />
-                <Route 
-                  path="/profile" 
-                  element={
-                    <PrivateRoute>
-                      <ProfilePage />
-                    </PrivateRoute>
-                  } 
-                />
-                <Route path="*" element={<Navigate to="/" />} />
-              </Routes>
-            </main>
+        <div className="bg-gradient-to-br from-gray-900 to-gray-800">
+          <div className="container bg-gradient-to-br from-gray-900 to-gray-800 mx-auto px-4 pb-8">
+            <div className="flex flex-col min-h-screen">
+              <Navbar />
+              <main className="container mx-auto px-4 py-8 flex-1">
+                <Routes>
+                  <Route path="/" element={<HomePage />} />
+                  <Route path="/login" element={<LoginPage />} />
+                  <Route 
+                    path="/profile" 
+                    element={
+                      <PrivateRoute>
+                        <ProfilePage />
+                      </PrivateRoute>
+                    } 
+                  />
+                  <Route path="*" element={<Navigate to="/" />} />
+                </Routes>
+              </main>
+            </div>
           </div>
         </div>
       </Router>
