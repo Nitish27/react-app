@@ -10,8 +10,8 @@ function App() {
   return (
     <AuthProvider>
       <Router>
-        <div className="bg-gradient-to-br from-gray-900 to-gray-800">
-          <div className="container bg-gradient-to-br from-gray-900 to-gray-800 mx-auto px-4 pb-8">
+        <div>
+          <div className="container mx-auto px-4 pb-8">
             <div className="flex flex-col min-h-screen">
               <Navbar />
               <main className="container mx-auto px-4 py-8 flex-1">
