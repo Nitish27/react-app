@@ -7,7 +7,7 @@ const LoginPage = () => {
 
   // Redirect to profile if already authenticated
   if (isAuthenticated) {
-    return <Navigate to="/profile" />;
+    return <Navigate to="/dashboard" />;
   }
 
   return (
